@@ -704,6 +704,106 @@ a { color: inherit; }
 }
 .card p { margin: 0; color: var(--ink-soft); font-size: 16px; }
 
+/* Confidentialité : le carnet sous clé, seul bloc à l'encre sur la page */
+.vault {
+  background:
+    radial-gradient(70% 60% at 100% 0%, rgba(180, 85, 45, 0.22), transparent 60%),
+    var(--ink);
+  color: #f4ede3;
+  border-radius: 36px;
+  padding: clamp(36px, 6vw, 80px) clamp(24px, 5vw, 72px);
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(32px, 6vw, 80px);
+}
+@media (max-width: 900px) { .vault { grid-template-columns: 1fr; } }
+
+.vault .eyebrow { color: #e3a684; }
+.vault .h2 { color: #fffaf3; }
+.vault .h2 em { color: #e3a684; }
+.vault-intro p { margin: 22px 0 0; color: #cfc6b9; font-size: 18px; max-width: 30em; }
+.vault-link {
+  display: inline-block;
+  margin-top: 26px;
+  color: #fffaf3;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 250, 243, 0.35);
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease;
+}
+.vault-link:hover { border-color: #e3a684; }
+
+.vault-list { list-style: none; margin: 0; padding: 0; }
+.vault-list li {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 16px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(244, 237, 227, 0.14);
+}
+.vault-list li:first-child { border-top: 0; padding-top: 0; }
+.vault-list h3 {
+  margin: 0 0 4px;
+  font-family: var(--serif);
+  font-weight: 450;
+  font-size: 22px;
+  letter-spacing: -0.015em;
+  color: #fffaf3;
+}
+.vault-list p { margin: 0; color: #cfc6b9; font-size: 16px; }
+
+/* Pastille : barrée par défaut, cochée pour « toi », à moitié pour l'éditeur. */
+.vault-list .mark {
+  width: 26px;
+  height: 26px;
+  margin-top: 3px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(244, 237, 227, 0.35);
+  position: relative;
+}
+.vault-list .mark::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  right: 6px;
+  top: 11px;
+  height: 1.5px;
+  background: rgba(244, 237, 227, 0.55);
+}
+.vault-list .yes .mark { background: var(--terracotta); border-color: var(--terracotta); }
+.vault-list .yes .mark::after {
+  left: 8px;
+  top: 6px;
+  right: auto;
+  width: 6px;
+  height: 10px;
+  background: none;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+}
+.vault-list .partial .mark { border-style: dashed; border-color: #e3a684; }
+.vault-list .partial .mark::after { background: #e3a684; }
+
+.vault-facts {
+  grid-column: 1 / -1;
+  list-style: none;
+  margin: 0;
+  padding: 26px 0 0;
+  border-top: 1px solid rgba(244, 237, 227, 0.14);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.vault-facts li {
+  font-size: 14px;
+  color: #f4ede3;
+  border: 1px solid rgba(244, 237, 227, 0.22);
+  border-radius: 999px;
+  padding: 7px 14px;
+}
+
 /* FAQ */
 .faq {
   display: grid;
