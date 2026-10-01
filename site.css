@@ -140,15 +140,11 @@ a { color: inherit; }
 }
 
 .brand-mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 10px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(140deg, var(--terracotta), var(--terracotta-deep));
-  box-shadow: 0 6px 16px -6px rgba(180, 85, 45, 0.6);
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(46, 42, 36, 0.08), 0 6px 14px -6px rgba(46, 42, 36, 0.35);
 }
-.brand-mark svg { width: 16px; height: 12px; }
 
 .nav {
   display: flex;
