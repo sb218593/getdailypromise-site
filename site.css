@@ -1001,3 +1001,33 @@ a { color: inherit; }
   .dots i { transition: none; opacity: 1; transform: none; }
   .card, .btn { transition: none; }
 }
+
+/* Page bêta : deux étapes et un code de secours */
+.beta-steps { list-style: none; margin: 40px 0 36px; padding: 0; display: grid; gap: 18px; }
+.beta-steps li {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 18px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  padding: 26px 24px;
+}
+.beta-num {
+  width: 44px; height: 44px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--terracotta-wash); color: var(--terracotta-deep);
+  font-family: var(--serif); font-size: 22px; font-weight: 500;
+}
+.beta-steps h2 { margin: 6px 0 6px; font-size: 24px; }
+.beta-steps p { margin: 0 0 18px; color: var(--ink-soft); }
+.beta-code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 30px; letter-spacing: 0.08em; color: var(--ink);
+  user-select: all; -webkit-user-select: all;
+  margin: 6px 0 0;
+}
+.beta-steps h2 { border-top: 0; padding-top: 0; }
+.doc .beta-steps .btn { text-decoration: none; }
+.doc .beta-steps .btn-store { color: var(--canvas); }
+.doc .beta-steps .btn-ghost { color: var(--ink); }
