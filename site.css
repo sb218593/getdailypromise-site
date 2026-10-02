@@ -1031,3 +1031,5 @@ a { color: inherit; }
 .doc .beta-steps .btn { text-decoration: none; }
 .doc .beta-steps .btn-store { color: var(--canvas); }
 .doc .beta-steps .btn-ghost { color: var(--ink); }
+/* Le bouton sombre garde toujours un texte clair, même dans une page de texte. */
+.btn-store, .doc .btn-store, .doc a.btn-store:visited { color: var(--canvas); }
