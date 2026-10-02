@@ -33,7 +33,7 @@
   <main id="contenu" class="doc">
     <span class="eyebrow">Confidentialité</span>
     <h1 class="display">Tes promesses <em>t'appartiennent.</em></h1>
-    <p class="updated">Dernière mise à jour : 1<sup>er</sup> octobre 2026</p>
+    <p class="updated">Dernière mise à jour : 2 octobre 2026</p>
 
     <p class="intro">DailyPromise ne vit pas de tes données. Pas de publicité, pas de revente, pas de pistage. Cette page explique, simplement, ce que l'app utilise, pourquoi, où c'est stocké et comment tout supprimer.</p>
 
@@ -68,14 +68,17 @@
           <tr><td><strong>Profil</strong></td><td>Ton prénom, le fait que tu as terminé la présentation de l'app, et tes réglages de rappel (activé ou non, heure).</td></tr>
           <tr><td><strong>Contenu</strong></td><td>Tes promesses (texte, date, moment où tu les as tenues) et les notes que tu choisis d'écrire.</td></tr>
           <tr><td><strong>Données techniques</strong></td><td>Adresse IP, date et heure de connexion, et informations techniques de l'appareil, conservées dans les journaux de sécurité de notre hébergeur.</td></tr>
+          <tr><td><strong>Statistiques d'usage</strong></td><td>Des événements anonymes, sans aucun contenu : par exemple « promesse tenue », « note ajoutée », « export », avec le modèle d'iPhone, la version d'iOS et de l'app. Jamais le texte de tes promesses ou de tes notes, ni ton nom, ni ton e-mail, ni ton adresse IP. Tu peux les désactiver dans Réglages → Statistiques d'usage anonymes.</td></tr>
+          <tr><td><strong>Rapports de plantage</strong></td><td>Quand l'app plante ou rencontre une erreur : la trace technique de l'erreur, le modèle d'iPhone et les versions d'iOS et de l'app. Sans adresse IP, sans capture d'écran, sans contenu.</td></tr>
         </tbody>
       </table>
     </div>
-    <p>Le rappel quotidien est une notification <strong>locale</strong> : il est programmé sur ton iPhone et ne passe par aucun serveur. L'app ne contient ni publicité, ni outil de mesure d'audience, ni traceur.</p>
+    <p>Le rappel quotidien est une notification <strong>locale</strong> : il est programmé sur ton iPhone et ne passe par aucun serveur. L'app ne contient ni publicité ni traceur publicitaire, et ne partage rien avec des annonceurs.</p>
 
     <h2 id="finalites">3. Pourquoi, et sur quelle base</h2>
     <ul>
       <li><strong>Faire fonctionner l'app</strong> (créer ton compte, sauvegarder et synchroniser tes promesses, t'envoyer les e-mails de confirmation ou de mot de passe oublié) : c'est nécessaire à l'exécution du service que tu demandes (article 6.1.b du RGPD).</li>
+      <li><strong>Comprendre l'usage de l'app et corriger les plantages</strong> (statistiques anonymes et rapports de plantage) : notre intérêt légitime à améliorer le service, sans identifier personne. Tu peux refuser les statistiques à tout moment dans les Réglages de l'app.</li>
       <li><strong>Assurer la sécurité</strong> (prévenir les abus et les accès frauduleux, grâce aux journaux techniques) : notre intérêt légitime à protéger le service et ses utilisateurs (article 6.1.f).</li>
       <li><strong>Te prévenir du lancement</strong>, si tu nous l'as demandé par e-mail : ton consentement (article 6.1.a), que tu peux retirer à tout moment.</li>
     </ul>
@@ -91,6 +94,8 @@
         <tbody>
           <tr><td><strong>Supabase</strong></td><td>Base de données et authentification</td><td>Union européenne (Irlande)</td></tr>
           <tr><td><strong>Resend</strong></td><td>Envoi des e-mails de confirmation et de mot de passe</td><td>Union européenne (Irlande)</td></tr>
+          <tr><td><strong>PostHog</strong></td><td>Statistiques d'usage anonymes (désactivables)</td><td>Union européenne (Allemagne)</td></tr>
+          <tr><td><strong>Sentry</strong></td><td>Rapports de plantage</td><td>Union européenne (Allemagne)</td></tr>
           <tr><td><strong>Google</strong></td><td>Connexion avec Google, seulement si tu la choisis</td><td>Selon Google</td></tr>
           <tr><td><strong>Have I Been Pwned</strong></td><td>Vérifier que ton nouveau mot de passe n'a pas déjà fuité ailleurs. Ton mot de passe ne quitte jamais ton iPhone : seuls les 5 premiers caractères de son empreinte chiffrée sont envoyés.</td><td>Réseau mondial</td></tr>
           <tr><td><strong>Apple</strong></td><td>Distribution de l'app (App Store, TestFlight), et connexion avec Apple si tu la choisis</td><td>Selon Apple</td></tr>
@@ -109,6 +114,7 @@
       <li><strong>Compte, profil et contenu</strong> : tant que ton compte existe. Si ton compte reste inactif pendant trois ans, nous pourrons le supprimer, après t'avoir prévenu par e-mail.</li>
       <li><strong>Après suppression du compte</strong> : tes données sont effacées immédiatement de notre base. Les éventuelles copies de sauvegarde techniques de notre hébergeur disparaissent dans un délai maximal de 30 jours.</li>
       <li><strong>Journaux techniques</strong> : quelques jours à quelques semaines, selon les règles de notre hébergeur.</li>
+      <li><strong>Statistiques d'usage et rapports de plantage</strong> : 13 mois au plus.</li>
       <li><strong>Demande « Me prévenir du lancement »</strong> : jusqu'à l'envoi de l'annonce, ou jusqu'à ce que tu nous demandes de l'effacer.</li>
     </ul>
 
