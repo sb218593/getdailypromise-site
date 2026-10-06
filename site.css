@@ -1033,3 +1033,144 @@ a { color: inherit; }
 .doc .beta-steps .btn-ghost { color: var(--ink); }
 /* Le bouton sombre garde toujours un texte clair, même dans une page de texte. */
 .btn-store, .doc .btn-store, .doc a.btn-store:visited { color: var(--canvas); }
+
+/* ---------- iPhone et Android ---------- */
+
+/* platform.js pose data-platform sur <html> : chaque téléphone ne voit que son bouton.
+   Sans JavaScript, les deux restent visibles. */
+[data-platform="ios"] .for-android,
+[data-platform="android"] .for-ios { display: none; }
+.for-desktop { display: none; }
+[data-platform="other"] .for-desktop { display: flex; }
+
+.qr-hint {
+  margin-top: 26px;
+  align-items: center;
+  gap: 16px;
+  max-width: 420px;
+}
+.qr-hint img {
+  flex: none;
+  border-radius: 12px;
+  border: 1px solid var(--hairline);
+  background: var(--paper);
+}
+.qr-hint p { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.45; }
+.qr-hint strong { color: var(--ink); font-weight: 600; }
+
+.devices {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, 5vw, 72px);
+  align-items: center;
+}
+@media (max-width: 900px) { .devices { grid-template-columns: 1fr; } }
+
+.devices-visual {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 70px minmax(0, 1fr);
+  align-items: center;
+}
+.mini-phone {
+  aspect-ratio: 9 / 14;
+  border-radius: 30px;
+  padding: 34px 14px 14px;
+  background:
+    radial-gradient(90% 40% at 50% 0%, rgba(180, 85, 45, 0.12), transparent 70%),
+    var(--canvas);
+  border: 7px solid #2a251f;
+  box-shadow: 0 30px 50px -30px rgba(46, 42, 36, 0.5);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.mini-label {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.mini-card {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  padding: 12px;
+  font-family: var(--serif);
+  font-size: clamp(15px, 1.6vw, 19px);
+  line-height: 1.2;
+  color: var(--ink);
+}
+.mini-card small {
+  display: block;
+  font-family: var(--sans);
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.mini-count { font-size: 11.5px; color: var(--muted); }
+.thread-line {
+  height: 2px;
+  margin: 0 6px;
+  background-image: linear-gradient(90deg, var(--terracotta) 50%, transparent 0);
+  background-size: 10px 2px;
+  position: relative;
+}
+.thread-line span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--terracotta);
+  translate: -50% -50%;
+  box-shadow: 0 0 0 5px var(--terracotta-wash);
+}
+
+/* Page bêta : un onglet par téléphone */
+.platform-tabs {
+  display: inline-flex;
+  gap: 4px;
+  margin-top: 28px;
+  padding: 4px;
+  border-radius: 14px;
+  background: var(--terracotta-wash);
+}
+.platform-tabs button {
+  border: 0;
+  background: transparent;
+  font: 600 15px var(--sans);
+  color: var(--ink-soft);
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.platform-tabs button[aria-selected="true"] {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 2px 8px -4px rgba(46, 42, 36, 0.35);
+}
+.platform-panel[hidden] { display: none; }
+
+.mini-dots { display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; }
+.mini-dots i { aspect-ratio: 1; border-radius: 50%; border: 1.5px solid var(--hairline); }
+.mini-dots i.k { background: var(--terracotta); border-color: var(--terracotta); }
+.mini-dots i.t { border: 1.5px dashed var(--terracotta); }
+.mini-dots i.f { border-color: transparent; background: rgba(138, 131, 120, 0.14); }
+.mini-btn {
+  margin-top: auto;
+  background: var(--terracotta);
+  color: #fff;
+  border-radius: 10px;
+  padding: 9px 6px;
+  text-align: center;
+  font-size: clamp(9px, 1vw, 11.5px);
+  font-weight: 600;
+}

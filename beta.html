@@ -6,12 +6,13 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Rejoindre la bêta · DailyPromise</title>
-  <meta name="description" content="Teste DailyPromise en avant-première sur iPhone : installe TestFlight, puis rejoins la bêta. Gratuit.">
+  <meta name="description" content="Teste DailyPromise en avant-première sur iPhone ou Android. Deux minutes, gratuit.">
   <meta name="theme-color" content="#f7f3ec">
   <link rel="canonical" href="https://getdailypromise.app/beta">
   <link rel="icon" type="image/png" href="/assets/favicon-64.png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="/site.css?v=20261002b">
+  <link rel="stylesheet" href="/site.css?v=20261006a">
+  <script src="/platform.js"></script>
 </head>
 <body>
   <a class="skip" href="#contenu">Aller au contenu</a>
@@ -33,32 +34,74 @@
   <main id="contenu" class="doc">
     <span class="eyebrow">Bêta ouverte</span>
     <h1 class="display">Teste DailyPromise <em>en avant-première.</em></h1>
-    <p class="intro">Deux étapes, deux minutes, sur ton iPhone. C'est gratuit.</p>
+    <p class="intro">Deux minutes, sur ton téléphone. C'est gratuit.</p>
 
-    <ol class="beta-steps">
-      <li>
-        <span class="beta-num">1</span>
-        <div>
-          <h2>Installe TestFlight</h2>
-          <p>L'app gratuite d'Apple pour essayer les apps avant leur sortie. Tu l'as déjà&nbsp;? Passe à l'étape 2.</p>
-          <a class="btn btn-ghost" href="https://apps.apple.com/fr/app/testflight/id899247664" rel="noopener">Installer TestFlight</a>
-        </div>
-      </li>
-      <li>
-        <span class="beta-num">2</span>
-        <div>
-          <h2>Reviens ici et rejoins la bêta</h2>
-          <p>Une fois TestFlight installé, reviens sur cette page et touche le bouton. TestFlight s'ouvre&nbsp;: touche «&nbsp;Accepter&nbsp;», puis «&nbsp;Installer&nbsp;».</p>
-          <a class="btn btn-store" href="https://testflight.apple.com/join/VhabMhk5" rel="noopener">Rejoindre la bêta</a>
-        </div>
-      </li>
-    </ol>
-
-    <div class="callout">
-      <p><strong>TestFlight affiche «&nbsp;Prêt à tester&nbsp;» sans rien proposer&nbsp;?</strong></p>
-      <p>Touche «&nbsp;Utiliser un code&nbsp;» et saisis ce code&nbsp;:</p>
-      <p class="beta-code">VhabMhk5</p>
+    <div class="platform-tabs" role="tablist" aria-label="Ton téléphone">
+      <button type="button" role="tab" id="tab-iphone" aria-controls="iphone" aria-selected="true">iPhone</button>
+      <button type="button" role="tab" id="tab-android" aria-controls="android" aria-selected="false">Android</button>
     </div>
+
+    <section class="platform-panel" id="iphone" role="tabpanel" aria-labelledby="tab-iphone">
+      <ol class="beta-steps">
+        <li>
+          <span class="beta-num">1</span>
+          <div>
+            <h2>Installe TestFlight</h2>
+            <p>L'app gratuite d'Apple pour essayer les apps avant leur sortie. Tu l'as déjà&nbsp;? Passe à l'étape 2.</p>
+            <a class="btn btn-ghost" href="https://apps.apple.com/fr/app/testflight/id899247664" rel="noopener">Installer TestFlight</a>
+          </div>
+        </li>
+        <li>
+          <span class="beta-num">2</span>
+          <div>
+            <h2>Reviens ici et rejoins la bêta</h2>
+            <p>Une fois TestFlight installé, reviens sur cette page et touche le bouton. TestFlight s'ouvre&nbsp;: touche «&nbsp;Accepter&nbsp;», puis «&nbsp;Installer&nbsp;».</p>
+            <a class="btn btn-store" href="https://testflight.apple.com/join/VhabMhk5" rel="noopener">Rejoindre la bêta</a>
+          </div>
+        </li>
+      </ol>
+
+      <div class="callout">
+        <p><strong>TestFlight affiche «&nbsp;Prêt à tester&nbsp;» sans rien proposer&nbsp;?</strong></p>
+        <p>Touche «&nbsp;Utiliser un code&nbsp;» et saisis ce code&nbsp;:</p>
+        <p class="beta-code">VhabMhk5</p>
+      </div>
+    </section>
+
+    <section class="platform-panel" id="android" role="tabpanel" aria-labelledby="tab-android">
+      <ol class="beta-steps">
+        <li>
+          <span class="beta-num">1</span>
+          <div>
+            <h2>Rejoins le groupe des testeurs</h2>
+            <p>Un groupe Google, avec le compte Google de ton téléphone (ton adresse Gmail). Il sert seulement à t'ouvrir l'accès&nbsp;: aucun message, aucune liste de diffusion.</p>
+            <!-- À CONFIRMER : adresse du groupe une fois créé -->
+            <a class="btn btn-ghost" href="https://groups.google.com/g/dailypromise-beta-android" rel="noopener">Rejoindre le groupe</a>
+          </div>
+        </li>
+        <li>
+          <span class="beta-num">2</span>
+          <div>
+            <h2>Accepte le test sur Google Play</h2>
+            <p>Touche «&nbsp;Devenir testeur&nbsp;». Quelques minutes peuvent être nécessaires après l'étape 1.</p>
+            <a class="btn btn-ghost" href="https://play.google.com/apps/testing/com.souhaylbadda.dailypromise" rel="noopener">Devenir testeur</a>
+          </div>
+        </li>
+        <li>
+          <span class="beta-num">3</span>
+          <div>
+            <h2>Installe DailyPromise</h2>
+            <p>Depuis le Play Store, comme n'importe quelle app. Les mises à jour arrivent ensuite toutes seules.</p>
+            <a class="btn btn-store" href="https://play.google.com/store/apps/details?id=com.souhaylbadda.dailypromise" rel="noopener">Installer depuis Google Play</a>
+          </div>
+        </li>
+      </ol>
+
+      <div class="callout">
+        <p><strong>Un vrai coup de main&nbsp;: reste inscrit 14 jours.</strong></p>
+        <p>Google demande qu'une nouvelle app soit testée au moins deux semaines par au moins douze personnes avant de la publier pour tout le monde. Garde l'app installée pendant ce temps, même si tu ne l'ouvres pas tous les jours. Il faut Android 8 ou plus récent.</p>
+      </div>
+    </section>
 
     <p class="intro">Un bug, une phrase pas claire&nbsp;? Fais une capture d'écran dans l'app pour nous l'envoyer, ou écris à <a href="mailto:contact@getdailypromise.app?subject=B%C3%AAta%20DailyPromise">contact@getdailypromise.app</a>. Merci d'avance&nbsp;!</p>
   </main>
@@ -87,5 +130,6 @@
       </div>
     </div>
   </footer>
+  <script src="/beta.js"></script>
 </body>
 </html>

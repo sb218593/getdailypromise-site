@@ -6,7 +6,7 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>DailyPromise · Une promesse par jour. Tiens-la.</title>
-  <meta name="description" content="DailyPromise t'aide à tenir une seule promesse par jour. Pas de liste, pas de pression : un engagement simple, tenu jour après jour. Bêta ouverte sur iPhone.">
+  <meta name="description" content="DailyPromise t'aide à tenir une seule promesse par jour. Pas de liste, pas de pression : un engagement simple, tenu jour après jour. Bêta ouverte sur iPhone et Android.">
   <meta name="theme-color" content="#f7f3ec">
   <link rel="canonical" href="https://getdailypromise.app/">
   <link rel="icon" type="image/png" href="/assets/favicon-64.png">
@@ -21,7 +21,11 @@
   <meta property="og:url" content="https://getdailypromise.app/">
   <meta property="og:image" content="https://getdailypromise.app/assets/icon-512.png">
   <meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="/site.css?v=20261002b">
+  <link rel="stylesheet" href="/site.css?v=20261006a">
+  <script src="/platform.js"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"DailyPromise","operatingSystem":"iOS, Android","applicationCategory":"LifestyleApplication","inLanguage":"fr","description":"Une seule promesse par jour, tenue. Un fil, pas une chaîne.","url":"https://getdailypromise.app/","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}
+  </script>
 </head>
 <body>
   <a class="skip" href="#contenu">Aller au contenu</a>
@@ -52,13 +56,21 @@
           <h1 class="display reveal d2">Tu commences<br>tout. <em>Tu finis<br>rarement.</em></h1>
           <p class="lede reveal d3">Et si tu changeais ça&nbsp;? DailyPromise t'aide à tenir <strong>une seule</strong> promesse par jour. Pas de liste, pas de pression&nbsp;: un engagement simple, tenu, jour après jour.</p>
           <div class="actions reveal d4">
-            <a class="btn btn-store" href="/beta" aria-label="Rejoindre la bêta gratuite sur iPhone avec TestFlight">
+            <a class="btn btn-store for-ios" href="/beta#iphone" aria-label="Rejoindre la bêta gratuite sur iPhone">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c.02 2.43 2.13 3.24 2.15 3.25-.02.06-.34 1.15-1.11 2.28-.67.97-1.36 1.95-2.45 1.97-1.07.02-1.41-.64-2.64-.64-1.22 0-1.6.62-2.61.66-1.05.04-1.85-1.05-2.53-2.02-1.38-1.99-2.43-5.62-1.02-8.07.7-1.22 1.95-1.99 3.31-2.01 1.03-.02 2.01.7 2.64.7.63 0 1.81-.86 3.05-.73.52.02 1.98.21 2.92 1.59-.08.05-1.74 1.02-1.71 3.02ZM14.35 4.89c.56-.68.94-1.62.83-2.56-.81.03-1.79.54-2.37 1.21-.52.6-.98 1.56-.86 2.48.9.07 1.83-.46 2.4-1.13Z"/></svg>
-              <span><small>Bêta gratuite</small>Rejoindre la bêta</span>
+              <span><small>Bêta gratuite</small>Sur iPhone</span>
+            </a>
+            <a class="btn btn-store for-android" href="/beta#android" aria-label="Rejoindre la bêta gratuite sur Android">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.6"/><path d="M10.5 18.5h3"/></svg>
+              <span><small>Bêta gratuite</small>Sur Android</span>
             </a>
             <a class="btn btn-ghost" href="mailto:contact@getdailypromise.app?subject=Pr%C3%A9viens-moi%20du%20lancement%20de%20DailyPromise">Me prévenir du lancement</a>
           </div>
-          <p class="hero-note reveal d5">Sur iPhone, via l'app TestFlight d'Apple · Gratuit · Sans publicité</p>
+          <p class="hero-note reveal d5">Sur iPhone et Android · Gratuit · Sans publicité</p>
+          <div class="qr-hint reveal d5 for-desktop">
+            <img src="/assets/qr-beta.svg" alt="" width="88" height="88">
+            <p><strong>Sur ton ordinateur&nbsp;?</strong> Vise ce code avec l'appareil photo de ton téléphone pour ouvrir la bêta.</p>
+          </div>
         </div>
 
         <div class="hero-visual reveal d3">
@@ -187,6 +199,34 @@
       </div>
     </section>
 
+    <!-- Un compte, tous tes téléphones -->
+    <section class="section" style="padding-top: 0">
+      <div class="wrap devices">
+        <div>
+          <span class="eyebrow">iPhone et Android</span>
+          <h2 class="h2">Change de téléphone, <em>garde <span class="nowrap">ton fil.</span></em></h2>
+          <p class="lede" style="margin-top: 22px">Ton carnet vit sur ton compte, pas dans ton téléphone. Passe d'un iPhone à un Android, ou l'inverse&nbsp;: connecte-toi, et chaque promesse, chaque note est déjà là.</p>
+        </div>
+        <div class="devices-visual" aria-hidden="true">
+          <div class="mini-phone">
+            <span class="mini-label">iPhone</span>
+            <div class="mini-card"><small>PROMESSE DU JOUR</small>Lire 10 pages</div>
+            <div class="mini-count">37 promesses tenues</div>
+            <div class="mini-dots"><i class="k"></i><i class="k"></i><i></i><i class="k"></i><i class="k"></i><i class="k"></i><i class="k"></i><i></i><i class="k"></i><i class="k"></i><i class="t"></i><i class="f"></i><i class="f"></i><i class="f"></i></div>
+            <div class="mini-btn">Marquer comme tenue</div>
+          </div>
+          <div class="thread-line"><span></span></div>
+          <div class="mini-phone">
+            <span class="mini-label">Android</span>
+            <div class="mini-card"><small>PROMESSE DU JOUR</small>Lire 10 pages</div>
+            <div class="mini-count">37 promesses tenues</div>
+            <div class="mini-dots"><i class="k"></i><i class="k"></i><i></i><i class="k"></i><i class="k"></i><i class="k"></i><i class="k"></i><i></i><i class="k"></i><i class="k"></i><i class="t"></i><i class="f"></i><i class="f"></i><i class="f"></i></div>
+            <div class="mini-btn">Marquer comme tenue</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Confidentialité -->
     <section class="section" id="confidentialite" style="padding-top: 0">
       <div class="wrap">
@@ -202,7 +242,7 @@
               <span class="mark" aria-hidden="true"></span>
               <div>
                 <h3>Toi</h3>
-                <p>Tes promesses, tes notes, ton fil. Sur ton iPhone et sur ton compte, nulle part ailleurs.</p>
+                <p>Tes promesses, tes notes, ton fil. Sur ton téléphone et sur ton compte, nulle part ailleurs.</p>
               </div>
             </li>
             <li>
@@ -237,7 +277,7 @@
           <ul class="vault-facts" aria-label="Protections en place">
             <li>Stockées en Europe (Irlande)</li>
             <li>Chiffrées pendant les échanges et sur le disque</li>
-            <li>Session gardée dans le trousseau Apple</li>
+            <li>Session protégée par ton téléphone</li>
             <li>Compte effacé en un geste, depuis l'app</li>
           </ul>
         </div>
@@ -255,7 +295,7 @@
         <div class="faq-list">
           <details>
             <summary>DailyPromise est-elle gratuite&nbsp;?</summary>
-            <p>L'essentiel, oui : choisir et tenir ta promesse du jour, ton historique et ton rappel quotidien sont gratuits, sans publicité. Plus tard, une formule Pro facultative proposera de quoi aller plus loin, comme des bilans et des réflexions guidées. Notre engagement : l'essentiel restera gratuit, et jamais d'essai qui se transforme en abonnement par surprise. Le prix et la date du premier prélèvement seront affichés clairement avant que tu acceptes, et tu pourras annuler à tout moment depuis les réglages de ton iPhone.</p>
+            <p>L'essentiel, oui : choisir et tenir ta promesse du jour, ton historique et ton rappel quotidien sont gratuits, sans publicité. Plus tard, une formule Pro facultative proposera de quoi aller plus loin, comme des bilans et des réflexions guidées. Notre engagement : l'essentiel restera gratuit, et jamais d'essai qui se transforme en abonnement par surprise. Le prix et la date du premier prélèvement seront affichés clairement avant que tu acceptes, et tu pourras annuler à tout moment, depuis l'App Store ou Google Play.</p>
           </details>
           <details>
             <summary>Pourquoi une seule promesse&nbsp;?</summary>
@@ -279,7 +319,7 @@
           </details>
           <details>
             <summary>Et si je change de téléphone&nbsp;?</summary>
-            <p>Rien n'est perdu. Tes promesses et tes notes sont sauvegardées sur ton compte : tu te connectes sur le nouvel iPhone et tout est là. Même sans réseau, l'app continue de fonctionner et se synchronise dès que la connexion revient.</p>
+            <p>Rien n'est perdu. Tes promesses et tes notes sont sauvegardées sur ton compte : tu te connectes sur le nouveau téléphone, iPhone ou Android, et tout est là. Même sans réseau, l'app continue de fonctionner et se synchronise dès que la connexion revient.</p>
           </details>
           <details>
             <summary>Qu'est-ce qui m'empêche de tricher&nbsp;?</summary>
@@ -287,19 +327,19 @@
           </details>
           <details>
             <summary>Pourquoi faut-il un compte&nbsp;?</summary>
-            <p>Pour que tes promesses soient sauvegardées et te suivent si tu changes ou perds ton téléphone. Tu peux t'inscrire avec ton e-mail, avec Google ou avec Apple ; avec Apple, tu peux même masquer ta vraie adresse.</p>
+            <p>Pour que tes promesses soient sauvegardées et te suivent si tu changes ou perds ton téléphone. Tu peux t'inscrire avec ton e-mail ou avec Google, et aussi avec Apple sur iPhone (en masquant ta vraie adresse si tu veux).</p>
           </details>
           <details>
             <summary>Comment rejoindre la bêta&nbsp;?</summary>
-            <p>Sur ton iPhone, va sur <a href="/beta">la page de la bêta</a> : installe d'abord l'app gratuite <strong>TestFlight</strong>, puis reviens sur la page et touche « Rejoindre la bêta ». Si TestFlight affiche « Prêt à tester », touche « Utiliser un code » et saisis <strong>VhabMhk5</strong>. Les mises à jour arrivent ensuite toutes seules. Un bug, une phrase pas claire&nbsp;? Fais une capture d'écran dans l'app pour nous l'envoyer, ou écris-nous.</p>
+            <p>Va sur <a href="/beta">la page de la bêta</a> depuis ton téléphone. <strong>Sur iPhone</strong>&nbsp;: installe l'app gratuite TestFlight, puis touche «&nbsp;Rejoindre la bêta&nbsp;». <strong>Sur Android</strong>&nbsp;: rejoins le groupe des testeurs, accepte le test sur Google Play, puis installe l'app. Les mises à jour arrivent ensuite toutes seules.</p>
           </details>
           <details>
             <summary>Sur quels appareils&nbsp;?</summary>
-            <p>DailyPromise arrive d'abord sur iPhone. Avec un compte, tes promesses te suivent si tu changes de téléphone.</p>
+            <p>Sur iPhone et sur Android (Android 8 ou plus récent). Avec un compte, tu passes de l'un à l'autre sans rien perdre.</p>
           </details>
           <details>
             <summary>Je peux récupérer ou tout effacer&nbsp;?</summary>
-            <p>Oui, les deux, à tout moment. Réglages → Exporter mes promesses te donne un tableau avec toutes tes promesses et tes notes, à garder où tu veux. Réglages → Supprimer mon compte. Ton compte, tes promesses et tes notes sont effacés immédiatement de nos serveurs et de ton iPhone. Le détail est dans notre <a href="/confidentialite">politique de confidentialité</a>.</p>
+            <p>Oui, les deux, à tout moment. Réglages → Exporter mes promesses te donne un tableau avec toutes tes promesses et tes notes, à garder où tu veux. Réglages → Supprimer mon compte. Ton compte, tes promesses et tes notes sont effacés immédiatement de nos serveurs et de ton téléphone. Le détail est dans notre <a href="/confidentialite">politique de confidentialité</a>.</p>
           </details>
         </div>
       </div>
@@ -311,7 +351,7 @@
         <div class="closing">
           <div>
             <h2>Une promesse par jour.<br><em>Rien de plus.</em></h2>
-            <p>La bêta est ouverte. Installe l'app gratuite TestFlight sur ton iPhone, touche le bouton, et commence dès aujourd'hui.</p>
+            <p>La bêta est ouverte sur iPhone et Android. Deux minutes pour l'installer, et tu commences dès aujourd'hui.</p>
           </div>
           <a class="btn btn-light" href="/beta">Rejoindre la bêta</a>
         </div>
