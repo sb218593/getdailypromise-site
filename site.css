@@ -1012,7 +1012,7 @@ a { color: inherit; }
 
 /* Page bêta : deux étapes et un code de secours */
 .beta-steps { list-style: none; margin: 40px 0 36px; padding: 0; display: grid; gap: 18px; }
-.beta-steps li {
+.beta-steps > li {
   display: grid;
   grid-template-columns: 52px minmax(0, 1fr);
   gap: 18px;
@@ -1194,5 +1194,5 @@ a { color: inherit; }
 }
 .beta-hint p { margin: 0 0 6px; font-size: 14px; }
 .beta-hint strong { color: var(--ink); font-weight: 600; }
-.beta-hint ol { margin: 0; padding-left: 20px; }
-.beta-hint li { margin: 4px 0; }
+.beta-hint ol { margin: 0; padding-left: 20px; list-style: decimal; display: block; }
+.beta-hint li { display: list-item; margin: 4px 0; padding: 0; background: none; border: 0; }
