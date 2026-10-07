@@ -1182,3 +1182,9 @@ a { color: inherit; }
   font-size: clamp(9px, 1vw, 11.5px);
   font-weight: 600;
 }
+
+.beta-hint {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
