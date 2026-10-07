@@ -320,6 +320,14 @@ a { color: inherit; }
   color: var(--muted);
 }
 
+.hero-group {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 460px;
+}
+.hero-group a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-visual { order: 2; }
