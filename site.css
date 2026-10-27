@@ -1051,6 +1051,9 @@ a { color: inherit; }
 [data-platform="android"] .for-ios { display: none; }
 .for-desktop { display: none; }
 [data-platform="other"] .for-desktop { display: flex; }
+/* Bêta Android : seulement sur Android (l'ordinateur voit le bouton App Store). */
+[data-platform="ios"] .only-android,
+[data-platform="other"] .only-android { display: none; }
 
 .qr-hint {
   margin-top: 26px;
