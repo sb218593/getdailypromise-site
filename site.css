@@ -1058,8 +1058,8 @@ a { color: inherit; }
 .qr-hint {
   margin-top: 26px;
   align-items: center;
-  gap: 16px;
-  max-width: 420px;
+  gap: 20px;
+  max-width: 460px;
 }
 .qr-hint img {
   flex: none;
